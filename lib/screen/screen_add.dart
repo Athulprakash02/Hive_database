@@ -236,12 +236,12 @@ class _ScreenAddState extends State<ScreenAdd> {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         behavior: SnackBarBehavior.floating,
         backgroundColor: Colors.red,
-        margin: EdgeInsets.all(10),
+        margin: const EdgeInsets.all(10),
         content: Text(_errorMessage)));
   }
 
   void studentAddSuccess() {
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
         behavior: SnackBarBehavior.floating,
         backgroundColor: Color.fromARGB(255, 31, 46, 31),
         content: Text('Added Successfully!!')));
